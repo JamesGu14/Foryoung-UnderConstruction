@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Counterpart | UnderConstruction Template</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="content/themes/Counterpart/style.css" />
+<link rel="stylesheet" href="content/themes/Counterpart/css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="content/themes/Counterpart/css/960.css" type="text/css" media="screen">
+<link rel="stylesheet" href="content/themes/Counterpart/css/supersized.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="content/themes/Counterpart/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="content/themes/Counterpart/js/jquery.countdown.js"></script>
+<script type="text/javascript" src="content/themes/Counterpart/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="content/themes/Counterpart/js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="content/themes/Counterpart/js/main.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function($){
+
+	$('div#countdown-timer').countdown("2016/12/16" , function(event) {
+		var $this = $(this);
+		switch(event.type){
+			case "seconds":
+			case "minutes":
+			case "hours":
+			case "days":
+			case "weeks":
+			case "daysLeft":
+			$this.find('span#'+event.type).html(event.value);
+			break;
+			case "finished":
+			$this.hide();
+			break;
+		}
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+	$.supersized({
+
+		// Functionality
+		slide_interval          :   3000,		// Length between transitions
+		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed		:	700,		// Speed of transition
+
+		// Components
+		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		slides 					:  	[			// Slideshow Images
+			{image : 'content/themes/Counterpart/images/slide/1.jpg'},
+			{image : 'content/themes/Counterpart/images/slide/2.jpg'},
+			{image : 'content/themes/Counterpart/images/slide/3.jpg'}
+
+		]
+
+	});
+});
+</script>
+
+</head>
+<body>
+
+
+<div id="cover">
+
+	<div class="topline"></div>
+
+	<!--Header Start-->
+	<div id="header">
+		<div class="container_12">
+
+			<!--Logo-->
+			<!--End Logo-->
+			<br /><br /><br /><br />
+		</div><!-- //container_12 -->
+	</div>
+	<!--Header End-->
+
+	<div class="clear"></div>
+
+	<!--Welcome Content Start-->
+	<div class="welcome-content">
+		<div class="container_12">
+			<div class="grid_12">
+				<h3 class="welcome-title">目前我们正在 <span class="highlight">建设中...</span></h3>
+				<br /><br /><br />
+				<h3 class="welcome-title">Our Website Is Under <span class="highlight">Construction...</span></h3>
+			</div><!-- //grid_12 -->
+		</div><!-- //container_12 -->
+	</div>
+	<!--Welcome Content End-->
+
+	<div class="clear"></div>
+
+
+
+	<div class="clear"></div>
+
+
+	<div class="clear"></div>
+
+</div>
+
+</body>
+</html>
